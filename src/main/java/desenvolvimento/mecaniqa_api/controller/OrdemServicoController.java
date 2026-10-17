@@ -1,3 +1,4 @@
+
 package desenvolvimento.mecaniqa_api.controller;
 
 import desenvolvimento.mecaniqa_api.dto.OrdemServicoDTO;
@@ -51,8 +52,9 @@ public class OrdemServicoController {
     }
 
     @PatchMapping("/{id}/status")
-    public ResponseEntity<?> atualizarStatus(@PathVariable Long id,
-                                             @RequestBody OrdemServicoDTO dto) {
+    public ResponseEntity<?> atualizarStatus(
+            @PathVariable Long id,
+            @RequestBody OrdemServicoDTO dto) {
         try {
             return ResponseEntity.ok(service.atualizarStatus(id, dto));
         } catch (DadosInvalidosException e) {
