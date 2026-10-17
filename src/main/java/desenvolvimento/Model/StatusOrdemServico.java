@@ -1,0 +1,10 @@
+
+package desenvolvimento.mecaniqa_api.model;
+
+public enum StatusOrdemServico {
+    ABERTO,
+    PENDENTE_DE_PAGAMENTO,
+    PAGO,
+    EM_EXECUCAO,
+    EXECUTADO
+}
